@@ -2,6 +2,7 @@ package com.l0122147.salsarizki.explisitintentsenddata
 
 import android.os.Bundle
 import android.view.View
+import android.content.Intent
 import android.widget.Button // Add this import statement
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -24,9 +25,14 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     }
 
     override fun onClick(view: View?) {
-        when (view?.id) {
+        when(view?.id){
             R.id.btn_profile -> {
-
+                val profileIntent = Intent(this@MainActivity, ProfileActivity::class.java)
+                profileIntent.putExtra(ProfileActivity.EXTRA_NIM, "L0122147")
+                profileIntent.putExtra(ProfileActivity.EXTRA_NAME, "Salsa Rizki Saputri")
+                profileIntent.putExtra(ProfileActivity.EXTRA_BATCH, 2022)
+                profileIntent.putExtra(ProfileActivity.EXTRA_GRADUATED, false)
+                startActivity(profileIntent)
             }
         }
     }
