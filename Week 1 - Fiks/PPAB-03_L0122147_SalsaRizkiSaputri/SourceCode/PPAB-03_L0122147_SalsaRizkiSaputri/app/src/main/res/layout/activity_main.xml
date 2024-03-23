@@ -5,92 +5,135 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FBFADA"
+    android:foregroundTint="#A5DCA7"
+    android:foregroundTintMode="add"
     tools:context=".MainActivity">
 
     <TextView
         android:id="@+id/greeting"
-        android:layout_width="wrap_content"
+        android:layout_width="167dp"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="169dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginEnd="165dp"
-        android:layout_marginBottom="627dp"
-        android:text="Hello World!"
+        android:layout_marginStart="121dp"
+        android:layout_marginTop="104dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="787dp"
+        android:text="@string/greetingstring"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.077" />
 
-    <ImageView
-        android:id="@+id/mypict"
-        android:layout_width="221dp"
-        android:layout_height="179dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="137dp"
-        android:layout_marginEnd="94dp"
-        android:layout_marginBottom="415dp"
-        android:rotationX="90"
-        app:srcCompat="@drawable/depan"
-        tools:srcCompat="@drawable/depan" />
-
     <TextView
-        android:id="@+id/myDesc"
+        android:id="@+id/titleDesc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="175dp"
-        android:layout_marginBottom="378dp"
-        android:text="TextView" />
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="488dp"
+        android:backgroundTintMode="screen"
+        android:contentDescription="@string/About_Me"
+        android:fadeScrollbars="true"
+        android:fontFamily="sans-serif-medium"
+        android:text="@string/About_Me"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
 
     <TextView
         android:id="@+id/desc"
+        android:layout_width="262dp"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="64dp"
+        android:layout_marginBottom="297dp"
+        android:focusableInTouchMode="true"
+        android:fontFamily="monospace"
+        android:foregroundTint="#009688"
+        android:foregroundTintMode="add"
+        android:gravity="start|bottom"
+        android:importantForAccessibility="noHideDescendants"
+        android:keepScreenOn="true"
+        android:lineSpacingExtra="12dp"
+        android:text="@string/Desc"
+        android:textColor="#009688"
+        android:textStyle="italic"
+        app:lineHeight="25dp" />
+
+    <TextView
+        android:id="@+id/FindMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="177dp"
-        android:layout_marginBottom="333dp"
-        android:text="TextView" />
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="162dp"
+        android:focusableInTouchMode="true"
+        android:fontFamily="monospace"
+        android:text="@string/find_me" />
+
+    <Button
+        android:id="@+id/detail_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="220dp"
+        android:text="@string/button" />
+
+    <ImageView
+        android:id="@+id/mypict"
+        android:layout_width="wrap_content"
+        android:layout_height="213dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="96dp"
+        android:layout_marginTop="144dp"
+        android:layout_marginEnd="94dp"
+        app:srcCompat="@drawable/depan1" />
 
     <ImageButton
         android:id="@+id/instagramIcon"
-        android:layout_width="53dp"
-        android:layout_height="54dp"
+        android:layout_width="67dp"
+        android:layout_height="60dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="267dp"
-        android:layout_marginBottom="70dp"
-        tools:src="@drawable/depan"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_marginEnd="262dp"
+        android:layout_marginBottom="69dp"
+        android:adjustViewBounds="true"
+        android:background="@color/material_on_background_disabled"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/instagram" />
 
     <ImageButton
         android:id="@+id/githubIcon"
-        android:layout_width="53dp"
-        android:layout_height="54dp"
+        android:layout_width="64dp"
+        android:layout_height="61dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="178dp"
+        android:layout_marginEnd="166dp"
         android:layout_marginBottom="71dp"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:background="@color/material_on_background_disabled"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/github" />
 
     <ImageButton
         android:id="@+id/whatsappIcon"
-        android:layout_width="53dp"
-        android:layout_height="54dp"
+        android:layout_width="59dp"
+        android:layout_height="62dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="93dp"
+        android:layout_marginEnd="86dp"
         android:layout_marginBottom="71dp"
-        tools:srcCompat="@tools:sample/avatars" />
-
+        android:background="@color/material_on_background_disabled"
+        android:scaleType="centerInside"
+        app:srcCompat="@drawable/whatsapp"/>
 </RelativeLayout>
