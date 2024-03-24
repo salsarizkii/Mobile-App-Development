@@ -12,24 +12,18 @@
 
     <TextView
         android:id="@+id/greeting"
-        android:layout_width="167dp"
-        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_height="28dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="134dp"
-        android:layout_marginTop="104dp"
-        android:layout_marginEnd="109dp"
-        android:layout_marginBottom="787dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="730dp"
         android:fontFamily="sans-serif-medium"
         android:text="@string/greetingstring"
-        android:textColor="#12372A"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.077" />
+        android:textColor="#12372A" />
 
     <TextView
         android:id="@+id/titleDesc"
@@ -37,8 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="147dp"
-        android:layout_marginBottom="488dp"
+        android:layout_marginEnd="144dp"
+        android:layout_marginBottom="419dp"
         android:backgroundTintMode="screen"
         android:contentDescription="@string/About_Me"
         android:fadeScrollbars="true"
@@ -54,7 +48,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="64dp"
-        android:layout_marginBottom="297dp"
+        android:layout_marginBottom="222dp"
         android:focusableInTouchMode="true"
         android:fontFamily="monospace"
         android:foregroundTint="#009688"
@@ -75,7 +69,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="166dp"
-        android:layout_marginBottom="161dp"
+        android:layout_marginBottom="124dp"
         android:focusableInTouchMode="true"
         android:fontFamily="monospace"
         android:text="@string/find_me" />
@@ -86,19 +80,19 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="113dp"
-        android:layout_marginBottom="220dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="160dp"
         android:text="@string/button" />
 
     <ImageView
         android:id="@+id/mypict"
-        android:layout_width="wrap_content"
-        android:layout_height="213dp"
+        android:layout_width="204dp"
+        android:layout_height="190dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="96dp"
-        android:layout_marginTop="144dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="231dp"
         android:layout_marginEnd="94dp"
         app:srcCompat="@drawable/depan1" />
 
@@ -108,10 +102,9 @@
         android:layout_height="60dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="262dp"
-        android:layout_marginBottom="69dp"
+        android:layout_marginEnd="263dp"
+        android:layout_marginBottom="38dp"
         android:adjustViewBounds="true"
-        android:background="@color/transparent"
         android:scaleType="centerInside"
         app:srcCompat="@drawable/instagram" />
 
@@ -122,8 +115,7 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="169dp"
-        android:layout_marginBottom="71dp"
-        android:background="@color/transparent"
+        android:layout_marginBottom="35dp"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/github" />
 
@@ -134,8 +126,9 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginEnd="81dp"
-        android:layout_marginBottom="71dp"
-        android:background="@color/transparent"
+        android:layout_marginBottom="31dp"
         android:scaleType="centerInside"
         app:srcCompat="@drawable/whatsapp" />
+
+
 </RelativeLayout>
