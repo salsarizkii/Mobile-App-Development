@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FBFADA"
-    android:foregroundTint="#A5DCA7"
+    android:background="#FFF6E9"
+    android:foregroundTint="#FFF6E9"
     android:foregroundTintMode="add"
     tools:context=".MainActivity">
 
@@ -18,11 +18,13 @@
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="121dp"
+        android:layout_marginStart="134dp"
         android:layout_marginTop="104dp"
-        android:layout_marginEnd="122dp"
+        android:layout_marginEnd="109dp"
         android:layout_marginBottom="787dp"
+        android:fontFamily="sans-serif-medium"
         android:text="@string/greetingstring"
+        android:textColor="#12372A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -72,8 +74,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="162dp"
-        android:layout_marginBottom="162dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginBottom="161dp"
         android:focusableInTouchMode="true"
         android:fontFamily="monospace"
         android:text="@string/find_me" />
@@ -109,7 +111,7 @@
         android:layout_marginEnd="262dp"
         android:layout_marginBottom="69dp"
         android:adjustViewBounds="true"
-        android:background="@color/material_on_background_disabled"
+        android:background="@color/transparent"
         android:scaleType="centerInside"
         app:srcCompat="@drawable/instagram" />
 
@@ -119,9 +121,9 @@
         android:layout_height="61dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="166dp"
+        android:layout_marginEnd="169dp"
         android:layout_marginBottom="71dp"
-        android:background="@color/material_on_background_disabled"
+        android:background="@color/transparent"
         android:scaleType="fitCenter"
         app:srcCompat="@drawable/github" />
 
@@ -131,9 +133,9 @@
         android:layout_height="62dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginEnd="86dp"
+        android:layout_marginEnd="81dp"
         android:layout_marginBottom="71dp"
-        android:background="@color/material_on_background_disabled"
+        android:background="@color/transparent"
         android:scaleType="centerInside"
-        app:srcCompat="@drawable/whatsapp"/>
+        app:srcCompat="@drawable/whatsapp" />
 </RelativeLayout>

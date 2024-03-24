@@ -2,7 +2,8 @@
     <string name="app_name">my-profile</string>
     <string name="greetingstring">Hello, EveryOne! I\'m Salsa!</string>
     <string name="About_Me">Get To Know Me!</string>
-    <string name="Desc">Hi everyone, let me introduce myself, my name is Salsa! I\'m 19 years old and currently studying computer science. Right now, I\'m learning about Android! Wish me luck on my new journey!</string>
+    <string name="Desc">Hi everyone, let me introduce myself, my name is Salsa! I\'m 19 years old and currently studying computer science. Welcome to my first
+    Mobile-App-Development Journey!</string>
     <string name="button">Detail Information</string>
     <string name="find_me">find me!</string>
     <string name="mypict_desc">first pic</string>
