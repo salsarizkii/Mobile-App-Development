@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">my-profile</string>
+    <string name="greetingstring">Hello, EveryOne! I\'m Salsa!</string>
+    <string name="About_Me">Get To Know Me!</string>
+    <string name="Desc">Hi everyone, let me introduce myself, my name is Salsa! I\'m 19 years old and currently studying computer science. Welcome to my first
+    Mobile-App-Development Journey!</string>
+    <string name="button">Detail Information</string>
+    <string name="find_me">find me!</string>
+    <string name="mypict_desc">first pic</string>
+    <string name="title_name">Nama Lengkap</string>
+    <string name="full_name">Salsa Rizki Saputri</string>
+    <string name="title_nim">Nomor Induk Mahasiswa</string>
+    <string name="nim">L0122147</string>
+    <string name="title_birthday">Tempat, Tanggal Lahir</string>
+    <string name="birthday">Sukoharjo, 27 April 2004</string>
+    <string name="share_button">share</string>
+</resources>

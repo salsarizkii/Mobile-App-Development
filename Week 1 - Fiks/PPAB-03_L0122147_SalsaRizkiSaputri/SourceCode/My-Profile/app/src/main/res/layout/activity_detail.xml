@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF6E9"
+    android:foregroundTint="#FFF6E9"
+    tools:context=".DetailActivity">
+
+    <TextView
+        android:id="@+id/titleName"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="438dp"
+        android:text="@string/title_name"
+        android:textColor="#495E57"
+        android:textSize="20.sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="151dp"
+        android:layout_marginBottom="417dp"
+        android:text="@string/full_name"
+        android:textColor="#638889"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <TextView
+        android:id="@+id/titleNIM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="376dp"
+        android:text="@string/title_nim"
+        android:textSize="20.sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <TextView
+        android:id="@+id/nim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="353dp"
+        android:text="@string/nim"
+        android:textColor="#638889"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <TextView
+        android:id="@+id/titleBirthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="123dp"
+        android:layout_marginBottom="312dp"
+        android:text="@string/title_birthday"
+        android:textSize="20.sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <TextView
+        android:id="@+id/Birthday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="136dp"
+        android:layout_marginBottom="289dp"
+        android:text="@string/birthday"
+        android:textColor="#638889"
+        android:textStyle="italic"
+        tools:layout_editor_absoluteX="170dp"
+        tools:layout_editor_absoluteY="66dp" />
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="158dp"
+        android:layout_marginBottom="87dp"
+        android:text="@string/share_button" />
+
+    <ImageView
+        android:id="@+id/scdPict"
+        android:layout_width="222dp"
+        android:layout_height="195dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="84dp"
+        android:layout_marginBottom="502dp"
+        app:srcCompat="@drawable/depan" />
+
+</RelativeLayout>
