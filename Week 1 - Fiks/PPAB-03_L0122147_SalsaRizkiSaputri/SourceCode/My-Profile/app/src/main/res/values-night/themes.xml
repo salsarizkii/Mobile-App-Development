@@ -1,13 +1,49 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Base.Theme.MyViewAndViewGroup" parent="Theme.Material3.DayNight">
+    <style name="Base.Theme.myprofile" parent="Theme.Material3.DayNight">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/gray_light</item>
-        <item name="colorOnPrimary">@color/black</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/orange_light</item>
+        <item name="colorPrimary">@color/dark_green</item>
+        <item name="colorOnPrimary">@color/superdark_green</item>
         <item name="colorOnSecondary">@color/black</item>
     </style>
 
-    <style name="Theme.MyViewAndViewGroup" parent="Base.Theme.MyViewAndViewGroup" />
+    <style name="Background_color">
+        <item name="android:background">@color/superdark_green</item>
+        <item name="android:foregroundTint">@color/superdark_green</item>
+        <item name="android:foregroundTintMode">add</item>
+    </style>
+
+    <style name="title_fix">
+        <item name="android:textColor">@color/cream_calm</item>
+        <item name="android:textSize">20.sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="value_tittle">
+        <item name="android:textColor">@color/soft_green</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="button_color">
+        <item name="android:backgroundTint">@color/cream_calm</item>
+        <item name="android:textColor">@color/superdark_green</item>
+    </style>
+
+    <style name="description">
+        <item name="android:fontFamily">monospace</item>
+        <item name="android:foregroundTintMode">add</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/soft_green</item>
+        <item name="android:textStyle">italic</item>
+    </style>
+
+    <style name="icon_button">
+        <item name="tint">@color/button_col2</item>
+        <item name="android:backgroundTint">@color/superdark_green</item>
+        <item name="android:background">@color/material_on_background_disabled</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+
+    <style name="Theme.myprofile" parent="Base.Theme.myprofile" />
 </resources>

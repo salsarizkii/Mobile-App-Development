@@ -5,11 +5,11 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF6E9"
-    android:foregroundTint="#FFF6E9"
+    style="@style/Background_color"
     tools:context=".DetailActivity">
 
     <TextView
+        style="@style/title_fix"
         android:id="@+id/titleName"
         android:layout_width="wrap_content"
         android:layout_height="29dp"
@@ -17,15 +17,13 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="52dp"
         android:text="@string/title_name"
-        android:textColor="#495E57"
-        android:textSize="20.sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toBottomOf="@+id/scdPict" />
 
     <TextView
+        style="@style/value_tittle"
         android:id="@+id/fullName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -33,13 +31,12 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="8dp"
         android:text="@string/full_name"
-        android:textColor="#638889"
-        android:textStyle="italic"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toBottomOf="@+id/titleName" />
 
     <TextView
+        style="@style/title_fix"
         android:id="@+id/titleNIM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -47,15 +44,13 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="24dp"
         android:text="@string/title_nim"
-        android:textSize="20.sp"
-        android:textStyle="bold"
-        android:textColor="#495E57"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toBottomOf="@+id/fullName" />
 
     <TextView
+        style="@style/value_tittle"
         android:id="@+id/nim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -63,13 +58,12 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="7dp"
         android:text="@string/nim"
-        android:textColor="#638889"
-        android:textStyle="italic"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toBottomOf="@+id/titleNIM" />
 
     <TextView
+        style="@style/title_fix"
         android:id="@+id/titleBirthday"
         android:layout_width="206dp"
         android:layout_height="23dp"
@@ -77,23 +71,19 @@
         android:layout_alignParentBottom="true"
         android:layout_marginTop="24dp"
         android:text="@string/title_birthday"
-        android:textColor="#495E57"
-        android:textSize="20.sp"
-        android:textStyle="bold"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintHorizontal_bias="0.634"
         app:layout_constraintStart_toStartOf="@+id/guideline6"
         app:layout_constraintTop_toBottomOf="@+id/nim" />
 
     <TextView
+        style="@style/value_tittle"
         android:id="@+id/Birthday"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:text="@string/birthday"
-        android:textColor="#638889"
-        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/guideline7"
         app:layout_constraintEnd_toStartOf="@+id/guideline5"
         app:layout_constraintHorizontal_bias="0.497"
@@ -102,6 +92,7 @@
         app:layout_constraintVertical_bias="0.084" />
 
     <Button
+        style="@style/button_color"
         android:id="@+id/shareButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

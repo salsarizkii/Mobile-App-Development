@@ -5,47 +5,42 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF6E9"
-    android:foregroundTint="#FFF6E9"
-    android:foregroundTintMode="add"
+    style="@style/Background_color"
     tools:context=".MainActivity">
 
     <TextView
+        style="@style/title_fix"
         android:id="@+id/greeting"
-        android:layout_width="166dp"
-        android:layout_height="35dp"
+        android:layout_width="248dp"
+        android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="52dp"
-        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="20dp"
         android:text="@string/greetingstring"
-
-        android:textColor="#12372A"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.732"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <TextView
+        style="@style/title_fix"
         android:id="@+id/titleDesc"
-        android:layout_width="108dp"
-        android:layout_height="16dp"
+        android:layout_width="159dp"
+        android:layout_height="26dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:backgroundTintMode="screen"
         android:contentDescription="@string/About_Me"
         android:fadeScrollbars="true"
-        android:fontFamily="sans-serif-medium"
         android:text="@string/About_Me"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        android:textColor="#12372A"
         app:layout_constraintBottom_toTopOf="@+id/desc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.531"
+        app:layout_constraintHorizontal_bias="0.559"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.941" />
+        app:layout_constraintVertical_bias="0.959" />
 
     <ImageView
         android:id="@+id/mypict"
@@ -59,29 +54,23 @@
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/greeting"
-        app:layout_constraintVertical_bias="0.48"
-
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/depan1" />
 
     <TextView
+        style="@style/description"
         android:id="@+id/desc"
         android:layout_width="278dp"
         android:layout_height="148dp"
         android:layout_alignWithParentIfMissing="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="20dp"
         android:focusableInTouchMode="true"
-        android:fontFamily="monospace"
-        android:foregroundTint="#009688"
-        android:foregroundTintMode="add"
-        android:gravity="center"
         android:importantForAccessibility="noHideDescendants"
         android:keepScreenOn="true"
         android:lineSpacingExtra="12dp"
         android:text="@string/Desc"
-        android:textColor="#009688"
-        android:textStyle="italic"
         app:layout_constraintBottom_toTopOf="@+id/detail_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.503"
@@ -89,85 +78,85 @@
         app:lineHeight="25dp" />
 
     <TextView
+        style="@style/description"
         android:id="@+id/FindMe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:focusableInTouchMode="true"
-        android:fontFamily="monospace"
-        android:textColor="#12372A"
         android:text="@string/find_me"
         app:layout_constraintBottom_toTopOf="@+id/githubIcon"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
+        style="@style/button_color"
         android:id="@+id/detail_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="12dp"
+        android:layout_marginBottom="28dp"
         android:text="@string/button"
         app:layout_constraintBottom_toTopOf="@+id/FindMe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
+        style="@style/icon_button"
         android:id="@+id/instagramIcon"
         android:layout_width="67dp"
         android:layout_height="60dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:adjustViewBounds="true"
-        android:background="@color/material_on_background_disabled"
-        android:backgroundTint="#FFF6E9"
-        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/githubIcon"
+        app:layout_constraintHorizontal_bias="0.546"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:srcCompat="@drawable/instagram" />
+        app:layout_constraintVertical_bias="0.385"
+        app:srcCompat="@drawable/square_instagram" />
 
     <ImageButton
+        style="@style/icon_button"
         android:id="@+id/githubIcon"
         android:layout_width="64dp"
         android:layout_height="61dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:background="@color/material_on_background_disabled"
-        android:backgroundTint="#FFF6E9"
-        android:scaleType="fitCenter"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:srcCompat="@drawable/github" />
+        app:layout_constraintVertical_bias="0.377"
+        app:srcCompat="@drawable/square_github" />
 
     <ImageButton
+        style="@style/icon_button"
         android:id="@+id/whatsappIcon"
         android:layout_width="59dp"
         android:layout_height="62dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:background="@color/material_on_background_disabled"
-        android:backgroundTint="#FFF6E9"
-        android:scaleType="centerInside"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
+        app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toEndOf="@+id/githubIcon"
         app:layout_constraintTop_toTopOf="@+id/guideline"
-        app:srcCompat="@drawable/whatsapp" />
+        app:layout_constraintVertical_bias="0.379"
+        app:srcCompat="@drawable/square_whatsapp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_begin="706dp" />
+        app:layout_constraintGuide_begin="626dp" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline2"

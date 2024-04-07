@@ -2,11 +2,11 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="gray">#607D8B</color>
     <color name="gray_light">#B0BEC5</color>
-    <color name="gray_dark">#455A64</color>
-    <color name="orange">#FF5722</color>
-    <color name="orange_light">#FFAB91</color>
-    <color name="orange_dark">#E64A19</color>
-    <color name="colorSubtitle">#757575</color>
+    <color name="dark_green">#638889</color>
+    <color name="cream_calm">#F1EEDC</color>
+    <color name="superdark_green">#495E57</color>
+    <color name="soft_green">#D9EDBF</color>
+    <color name="button_col">#222831</color>
+    <color name="button_col2">#FFFDD7</color>
 </resources>
