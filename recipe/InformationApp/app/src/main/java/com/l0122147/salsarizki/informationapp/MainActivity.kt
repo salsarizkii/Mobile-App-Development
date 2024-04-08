@@ -33,17 +33,29 @@ class MainActivity : AppCompatActivity() {
         showRecyclerList()
     }
 
-    fun getListCats() : ArrayList<Cat> {
+    private fun getListCats(): ArrayList<Cat> {
         val dataName = resources.getStringArray(R.array.data_name)
         val dataDesc = resources.getStringArray(R.array.data_desc)
         val dataImg = resources.obtainTypedArray(R.array.data_img)
-        val listHero = ArrayList<Cat>()
+        val dataInstagram = resources.getStringArray(R.array.data_instagram)
+
+        val listCats = ArrayList<Cat>()
         for (i in dataName.indices) {
-            val hero = Cat(dataName[i], dataDesc[i], dataImg.getResourceId(i, -1))
-            listHero.add(hero)
+            val cat = Cat(
+                dataName[i],
+                dataDesc[i],
+                dataImg.getResourceId(i, -1),
+                dataInstagram[i] // Menggunakan nilai dataInstagram[i] sebagai instagramUsername
+            )
+            listCats.add(cat)
         }
-        return listHero
+
+        dataImg.recycle() // Pastikan untuk mendaur ulang TypedArray setelah digunakan
+        return listCats
     }
+
+
+
 
     private fun showRecyclerList() {
         rvCats.layoutManager = LinearLayoutManager(this)

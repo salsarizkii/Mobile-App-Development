@@ -6,6 +6,7 @@ import kotlinx.parcelize.Parcelize
 @Parcelize
 data class Cat(
     val name: String,
-    val desc: String,
-    val img: Int
+    val description: String,
+    val imageResId: Int,
+    val instagramUsername: String, // Properti untuk menyimpan username Instagram
 ) : Parcelable
