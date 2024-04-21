@@ -1,7 +1,7 @@
 <resources>
-    <string name="app_name">Meow App</string>
-    <string name="cat_name">Nama Kucing</string>
-    <string name="description">Deskripsi</string>
+    <string name="app_name">MyFavSingerList</string>
+    <string name="singer_name">Singer Name</string>
+    <string name="description">Description</string>
 
     <string-array name="data_name">
         <item>Taylor Swift</item>
@@ -74,7 +74,6 @@
         <item>tulusm</item>
         <item>fiersabesari</item>
     </string-array>
-
 
     <string name="list">List</string>
     <string name="grid">Grid</string>

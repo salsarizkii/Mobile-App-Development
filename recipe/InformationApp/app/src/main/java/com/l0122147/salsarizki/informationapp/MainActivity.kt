@@ -4,7 +4,6 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -14,8 +13,8 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var rvCats: RecyclerView
-    private val list = ArrayList<Cat>()
+    private lateinit var rvSingers: RecyclerView
+    private val list = ArrayList<Singer>()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,52 +25,52 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        rvCats = findViewById(R.id.rv_cats)
-        rvCats.setHasFixedSize(true)
+        rvSingers = findViewById(R.id.rv_Singer)
+        rvSingers.setHasFixedSize(true)
 
-        list.addAll(getListCats())
+        list.addAll(getListSingers())
         showRecyclerList()
     }
 
-    private fun getListCats(): ArrayList<Cat> {
+    private fun getListSingers(): ArrayList<Singer> {
         val dataName = resources.getStringArray(R.array.data_name)
         val dataDesc = resources.getStringArray(R.array.data_desc)
         val dataImg = resources.obtainTypedArray(R.array.data_img)
         val dataInstagram = resources.getStringArray(R.array.data_instagram)
 
-        val listCats = ArrayList<Cat>()
+        val listSingers = ArrayList<Singer>()
         for (i in dataName.indices) {
-            val cat = Cat(
+            val Singer = Singer(
                 dataName[i],
                 dataDesc[i],
                 dataImg.getResourceId(i, -1),
                 dataInstagram[i] // Menggunakan nilai dataInstagram[i] sebagai instagramUsername
             )
-            listCats.add(cat)
+            listSingers.add(Singer)
         }
 
         dataImg.recycle() // Pastikan untuk mendaur ulang TypedArray setelah digunakan
-        return listCats
+        return listSingers
     }
 
 
 
 
     private fun showRecyclerList() {
-        rvCats.layoutManager = LinearLayoutManager(this)
-        val listCatAdapter = ListCatAdapter(list)
-        rvCats.adapter = listCatAdapter
+        rvSingers.layoutManager = LinearLayoutManager(this)
+        val listSingerAdapter = ListSingerAdapter(list)
+        rvSingers.adapter = listSingerAdapter
 
-        listCatAdapter.setOnItemClickCallback(object : ListCatAdapter.OnItemClickCallback {
-            override fun onItemClicked(data: Cat) {
-                showSelectedCat(data)
+        listSingerAdapter.setOnItemClickCallback(object : ListSingerAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Singer) {
+                showSelectedSinger(data)
             }
 
         })
     }
 
-    private fun showSelectedCat(cat: Cat) {
-        Toast.makeText(this, cat.name + " is selected", Toast.LENGTH_SHORT).show()
+    private fun showSelectedSinger(Singer: Singer) {
+        Toast.makeText(this, Singer.name + " is selected", Toast.LENGTH_SHORT).show()
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
@@ -82,10 +81,10 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             R.id.action_list -> {
-                rvCats.layoutManager = LinearLayoutManager(this)
+                rvSingers.layoutManager = LinearLayoutManager(this)
             }
             R.id.action_grid -> {
-                rvCats.layoutManager = GridLayoutManager(this, 2)
+                rvSingers.layoutManager = GridLayoutManager(this, 2)
             }
         }
         return super.onOptionsItemSelected(item)

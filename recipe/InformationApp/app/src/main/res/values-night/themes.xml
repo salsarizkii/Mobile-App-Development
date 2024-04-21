@@ -4,4 +4,22 @@
         <!-- Customize your dark theme here. -->
         <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
     </style>
+
+    <style name="shapeImageView">
+        <item name="cornerSize">20%</item>
+        <item name="android:elevation">16dp</item>
+    </style>
+
+    <style name="bg_color">
+        <item name="android:background">@color/dark_green</item>
+    </style>
+
+    <style name="item_color">
+        <item name="cardBackgroundColor">@color/dark_green</item>
+        <item name="strokeColor">@color/creamy</item>
+    </style>
+
+    <style name="text_color">
+        <item name="android:textColor">@color/creamy</item>
+    </style>
 </resources>
