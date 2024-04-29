@@ -1,4 +1,4 @@
-package com.l0122147.salsarizki.koreandramaku.ui.home
+package com.l0122147.salsarizki.myapplication.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,9 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import androidx.navigation.Navigation
-import com.l0122147.salsarizki.koreandramaku.R
-import com.l0122147.salsarizki.koreandramaku.databinding.FragmentHomeBinding
+import com.l0122147.salsarizki.myapplication.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
 
@@ -35,16 +33,6 @@ class HomeFragment : Fragment() {
             textView.text = it
         }
         return root
-    }
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        binding.btnCategory.setOnClickListener(
-            Navigation.createNavigateOnClickListener(R.id.action_homeFragment_to_categoryFragment)
-        )
-        binding.btnProfile.setOnClickListener {view ->
-            view.findNavController().navigate(R.id.action_homeFragment_to_profileActivity)
-        }
     }
 
     override fun onDestroyView() {
