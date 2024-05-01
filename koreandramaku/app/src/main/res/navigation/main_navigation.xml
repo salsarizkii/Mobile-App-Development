@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
  <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/main_navigation">
+     xmlns:tools="http://schemas.android.com/tools"
+     android:id="@+id/main_navigation"
+     app:startDestination="@id/profileFragment">
 
+  <fragment
+      android:id="@+id/profileFragment"
+      android:name="com.l0122147.salsarizki.koreandramaku.ui.profile.ProfileFragment"
+      android:label="fragment_profile"
+      tools:layout="@layout/fragment_profile" >
+<!--   <action-->
+<!--       android:id="@+id/action_profileFragment_to_detailFragment"-->
+<!--       app:destination="@id/detailFragment" />-->
+<!--   <action-->
+<!--       android:id="@+id/action_profileFragment_to_profileActivity"-->
+<!--       app:destination="@id/profileActivity" />-->
+  </fragment>
+  <fragment
+      android:id="@+id/detailFragment"
+      android:name="com.l0122147.salsarizki.koreandramaku.DetailFragment"
+      android:label="fragment_detail"
+      tools:layout="@layout/fragment_detail" />
+ <activity
+     android:id="@+id/profileActivity"
+     android:name="com.l0122147.salsarizki.koreandramaku.ui.ProfileActivity"
+     android:label="activity_profile"
+     tools:layout="@layout/activity_profile" />
 </navigation>
+
