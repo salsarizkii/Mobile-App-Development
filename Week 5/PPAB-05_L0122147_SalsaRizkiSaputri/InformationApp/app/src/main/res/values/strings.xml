@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Singer List</string>
+    <string name="singer_name">Singer Name</string>
+    <string name="description">Description</string>
+
+    <string-array name="data_name">
+        <item>Taylor Swift</item>
+        <item>Misellia Ikhwan</item>
+        <item>Rich Brian</item>
+        <item>Nadin Amizah</item>
+        <item>Bernadya Ribka</item>
+        <item>EXO</item>
+        <item>NCT DREAM</item>
+        <item>Nicole Zefanya</item>
+        <item>Tulus</item>
+        <item>Fiersa Besari</item>
+    </string-array>
+
+    <string-array name="data_desc">
+    <item><![CDATA[I have been listening to her songs since I was around 10 years old, during my elementary school days!
+        I used to really like "Red" and "22", but now I think my favorites are "The Way I Loved You," "You Belong with Me," and "Enchanted."
+    ]]></item>
+        <item><![CDATA[I have known her since we were 13. She was covering Ed Sheeran(s) song "Perfect," and I immediately fell in love with her voice.
+        Because we are the same age, thatms when I started idolizing her.
+    ]]></item>
+        <item><![CDATA[I have idolized him ever since he released his song "Love in My Pocket." He is Indonesian but based in the USA under the 88rising label.
+        I knew about him before, but after "Love in My Pocket," I started following him closely. I even learned English because of him!
+    ]]></item>
+        <item><![CDATA[Of course, when I started senior high school, two songs by Nadin Amizah became popular, and surprisingly, I loved them even though her music genre usually does not fit my taste!
+        Until now, I still love her and her song "Star" the most.
+    ]]></item>
+        <item><![CDATA[I have really loved her since I found a singing video of her covering the song "I Love You, You'll Know It." Her voice is so unique and calming!
+        And then I discovered her song "Lugu," and now I am a big fan of her music!    ]]></item>
+        <item><![CDATA[EXO is definitely the boy group with the most stable voices! I adore them! My favorite song is "Walk on Memories"!
+        My bias is Baekhyun and Chanyeol! I love their jokes and how fun they are.
+    ]]></item>
+        <item><![CDATA[NCT DREAM is the cutest group on this list! I love them because I discovered their song "We Go Up" and immediately became a fan of Nana with his pink hair!
+        The songs I love the most from them are "Life is Still Going On" and "Beautiful Time."
+    ]]></item>
+        <item><![CDATA[The first time I saw her was on TikTok with her amazing song "Lose." I started following her and was surprised to find out she is under the 88rising label just like Rich Brian.
+        I still love her song "La La Lost You"!
+    ]]></item>
+        <item><![CDATA[I have been listening to his songs since elementary school! I used to sing his songs all the time and enjoyed his voice so much!
+        I loved the song "Sepatu" back then, and nowadays, I am obsessed with "Interaksi."
+    ]]></item>
+        <item><![CDATA[I fell in love with his song "Waktu yang Salah"! Everyone knows that song. I started following him and discovered that he is a writer, songwriter, and singer!
+        So fascinating. And I still love the song "Waktu yang Salah" to this day.
+    ]]></item>
+    </string-array>
+
+
+    <integer-array name="data_img">
+        <item>@drawable/taylor</item>
+        <item>@drawable/misellia</item>
+        <item>@drawable/richbrian</item>
+        <item>@drawable/nadinamizah</item>
+        <item>@drawable/bernadyaribka</item>
+        <item>@drawable/exo</item>
+        <item>@drawable/nctdream</item>
+        <item>@drawable/nikizefanya</item>
+        <item>@drawable/tulus</item>
+        <item>@drawable/fiersabesari</item>
+    </integer-array>
+
+    <string-array name="data_instagram">
+        <item>taylorswift</item>
+        <item>misellia_</item>
+        <item>brianimanuel</item>
+        <item>cakecaine</item>
+        <item>bernadyaribka</item>
+        <item>weareone.exo</item>
+        <item>nct_dream</item>
+        <item>nikizefanya</item>
+        <item>tulusm</item>
+        <item>fiersabesari</item>
+    </string-array>
+
+    <string name="list">List</string>
+    <string name="grid">Grid</string>
+
+</resources>
