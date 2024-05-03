@@ -21,6 +21,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+
         val detail_button: Button = findViewById(R.id.detail_button)
         detail_button.setOnClickListener(this)
 
