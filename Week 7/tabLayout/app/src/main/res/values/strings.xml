@@ -86,4 +86,71 @@
 
         <string name="list">List</string>
         <string name="grid">Grid</string>
+
+
+    <string name="song_name">Singer Name</string>
+    <string name="song_description">Description</string>
+
+    <string-array name="song_name">
+        <item>We Go Up</item>
+        <item>Monster</item>
+        <item>Power</item>
+        <item>If you could see me cryin\' in my room</item>
+        <item>The way i loved you</item>
+        <item>Red</item>
+        <item>22</item>
+        <item>Drive Safe</item>
+        <item>La la lost you</item>
+        <item>Lowkey</item>
+    </string-array>
+
+    <string-array name="song_desc">
+    <item><![CDATA[A high-energy K-pop anthem that captures the exhilarating feeling of chasing dreams and reaching for the stars, with catchy hooks and dynamic beats.
+    ]]></item>
+        <item><![CDATA[A powerful and intense track that showcases EXO\'s versatility and charisma, exploring themes of inner conflict and embracing one\'s darker side with a blend of haunting melodies and commanding vocals.
+    ]]></item>
+        <item><![CDATA[IAn electrifying pop anthem that exudes confidence and energy, encouraging listeners to find their inner strength and overcome obstacles with its addictive chorus and uplifting lyrics.
+    ]]></item>
+        <item><![CDATA[A soulful and introspective song that delves into themes of heartbreak and vulnerability, with poignant lyrics and a heartfelt vocal delivery that resonate with raw emotion.
+    ]]></item>
+        <item><![CDATA[A tender and heartfelt ballad that captures the essence of falling deeply in love, with Taylor Swift\'s signature storytelling and emotional depth shining through every heartfelt lyric and melody.]]></item>
+        <item><![CDATA[A vibrant and passionate track that explores the tumultuous emotions of a passionate love affair, with vivid imagery and a dynamic blend of country and pop influences.
+    ]]></item>
+        <item><![CDATA[A fun and carefree anthem celebrating the joys of youth and friendship, with infectious melodies and relatable lyrics that capture the excitement and freedom of being twenty-two.
+    ]]></item>
+        <item><![CDATA[A heartfelt and intimate song that reflects on the complexities of life and relationships, with Rich Brian\'s introspective lyrics and melodic delivery creating a poignant and emotive listening experience.
+    ]]></item>
+        <item><![CDATA[A soulful and melancholic track that explores the pain of heartbreak and loss, with NIKI\'s emotive vocals and atmospheric production evoking a sense of longing and nostalgia.
+    ]]></item>
+        <item><![CDATA[A smooth and sultry R&B track that oozes with confidence and allure, showcasing NIKI\'s seductive vocals and slick production while exploring themes of desire and attraction.
+    ]]></item>
+    </string-array>
+
+
+    <integer-array name="song_img">
+        <item>@drawable/wegoup</item>
+        <item>@drawable/monster</item>
+        <item>@drawable/power</item>
+        <item>@drawable/iyksmcimr</item>
+        <item>@drawable/twily</item>
+        <item>@drawable/red</item>
+        <item>@drawable/duadua</item>
+        <item>@drawable/drivesafe</item>
+        <item>@drawable/lalalostyou</item>
+        <item>@drawable/lowkey</item>
+    </integer-array>
+
+    <string-array name="song_spotify">
+        <item>https://open.spotify.com/track/26vOBLHS116a4WNUVlvAUW?si=jKybQoFoTU-ArRqtdeXGQA</item>
+        <item>https://open.spotify.com/track/7GbUWl6qLW1gdngbEV2WDJ?si=5uKeoWfJQFGvf1c2zHFBvQ</item>
+        <item>https://open.spotify.com/track/53YZi9zgTnF0Py0K6ejyWz?si=sVq-esZxTL-WHUbiR2djbg</item>
+        <item>https://open.spotify.com/track/13sOb9V6Y3uCnRxY9HIZqP?si=Xbdy0QRQTjCX8EwpOki5Ig</item>
+        <item>https://open.spotify.com/track/22bPsP2jCgbLUvh82U0Z3M?si=mHcY40X5Q3mh8faNbl4l9w</item>
+        <item>https://open.spotify.com/track/4OAuvHryIVv4kMDNSLuPt6?si=ddRzkw9FSs-FXbaQ3AN-ig</item>
+        <item>https://open.spotify.com/track/3WC5CVAahvn98hiseoIvbw?si=w4_aPmKETyS_aw-OeAv57Q</item>
+        <item>https://open.spotify.com/track/6eDfe957aV4sqGnDhlSikJ?si=7yXS6FnVRzmHFzW_iMGUZQ</item>
+        <item>https://open.spotify.com/track/5WkCcSa78lM1Ym4LXzJUiN?si=2AHYXdgeS8u3oVQQC0iacw</item>
+        <item>https://open.spotify.com/track/7ipqVwkp2MhZv0Ojzqy1NV?si=oOJ6LwP3SnedxT1JQEpwdA</item>
+    </string-array>
+
 </resources>

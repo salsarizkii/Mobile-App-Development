@@ -14,6 +14,10 @@
         <item name="android:background">@color/light_green</item>
     </style>
 
+    <style name="special_color">
+        <item name="android:background">@color/superdark</item>
+    </style>
+
 
     <style name="item_color">
         <item name="cardBackgroundColor">@color/light_green</item>
