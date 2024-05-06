@@ -1,0 +1,101 @@
+<resources>
+    <string name="app_name">MyBottomNavigation</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_profile">Profile</string>
+
+    <!--    hhh-->
+    <string name="notif">ini notif</string>
+    <string name="dasb">ini dashboard</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hello_home_fragment">Home Fragment</string>
+    <string name="to_profile">Find salsas age!</string>
+    <string name="to_category">find another text</string>
+    <string name="this_profile">Ini activity Profile</string>
+    <string name="this_category">Umur salsa 19 tahun</string>
+    <string name="category_lifestyle">Ke fragment Lifestyle</string>
+    <string name="category_sport">Ke fragment Sport</string>
+    <string name="category_name">Category Name</string>
+    <string name="category_description">Category Description</string>
+    <string name="to_home">Ke fragment Home</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="title_detail">Detail Fragment</string>
+
+    <string name="greetingstring">Hello, EveryOne! I\'m Salsa!</string>
+    <string name="About_Me">Get To Know Me!</string>
+    <string name="Desc">Hi everyone, let me introduce myself, my name is Salsa! I\'m 19 years old and currently studying computer science. Welcome to my first
+    Mobile-App-Development Journey!</string>
+    <string name="button">Detail Information</string>
+    <string name="find_me">find me!</string>
+    <string name="mypict_desc">first pic</string>
+    <string name="title_name">Nama Lengkap</string>
+    <string name="full_name">Salsa Rizki Saputri</string>
+    <string name="title_nim">Nomor Induk Mahasiswa</string>
+    <string name="nim">L0122147</string>
+    <string name="title_birthday">Tempat, Tanggal Lahir</string>
+    <string name="birthday">Sukoharjo, 27 April 2004</string>
+    <string name="share_button">share</string>
+
+    <string name="detail_salsa">Salsa si anak ceria, dengan senyumannya yang merekah bak mentari pagi.</string>
+
+    <string name="singer_name1">nct dream</string>
+    <string name="singer_name2">misellia</string>
+    <string name="singer_name3">taylor swift</string>
+
+    <string name="singerdesc2">I have known her since we were 13. She was covering Ed Sheeran(s) song "Perfect," and I immediately fell in love with her voice.
+        Because we are the same age, that s when I started idolizing her.</string>
+    <string name="singerdesc1">NCT DREAM is the cutest group on this list! I love them because I discovered their song "We Go Up" and immediately became a fan of Nana with his pink hair!
+        The songs I love the most from them are "Life is Still Going On" and "Beautiful Time."</string>
+    <string name="singerdesc3">I have been listening to her songs since I was around 10 years old, during my elementary school days!
+        I used to really like "Red" and "22", but now I think my favorites are "The Way I Loved You," "You Belong with Me," and "Enchanted."</string>
+
+    <string name="firstnotif">nct dream start following you!</string>
+    <string name="scdnotif">na jaemin likes your profile</string>
+    <string name="thirdnotif">taylor swift visit your profile</string>
+    <string name="fourthnotif">misellia ask you to be her friend!</string>
+    <string name="fifthnotif">exo send you an eribong!</string>
+</resources>
