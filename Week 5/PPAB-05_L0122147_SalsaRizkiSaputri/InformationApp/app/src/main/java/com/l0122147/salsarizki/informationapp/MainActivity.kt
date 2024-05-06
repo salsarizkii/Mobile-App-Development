@@ -53,9 +53,6 @@ class MainActivity : AppCompatActivity() {
         return listSingers
     }
 
-
-
-
     private fun showRecyclerList() {
         rvSingers.layoutManager = LinearLayoutManager(this)
         val listSingerAdapter = ListSingerAdapter(list)

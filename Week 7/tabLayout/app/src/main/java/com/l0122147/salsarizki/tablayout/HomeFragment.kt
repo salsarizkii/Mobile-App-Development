@@ -5,55 +5,96 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
+import android.widget.Toast
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
 
-// TODO: Rename parameter arguments, choose names that match
-// the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-private const val ARG_PARAM1 = "param1"
-private const val ARG_PARAM2 = "param2"
-
-/**
- * A simple [Fragment] subclass.
- * Use the [HomeFragment.newInstance] factory method to
- * create an instance of this fragment.
- */
 class HomeFragment : Fragment() {
-    // TODO: Rename and change types of parameters
-    private var param1: String? = null
-    private var param2: String? = null
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        arguments?.let {
-            param1 = it.getString(ARG_PARAM1)
-            param2 = it.getString(ARG_PARAM2)
-        }
-    }
+    private lateinit var rvSingers: RecyclerView
+    private val list = ArrayList<Singer>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home, container, false)
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
+        ViewCompat.setOnApplyWindowInsetsListener(view.findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
+        }
+        return view
     }
 
-    companion object {
-        /**
-         * Use this factory method to create a new instance of
-         * this fragment using the provided parameters.
-         *
-         * @param param1 Parameter 1.
-         * @param param2 Parameter 2.
-         * @return A new instance of fragment HomeFragment.
-         */
-        // TODO: Rename and change types and number of parameters
-        @JvmStatic
-        fun newInstance(param1: String, param2: String) =
-            HomeFragment().apply {
-                arguments = Bundle().apply {
-                    putString(ARG_PARAM1, param1)
-                    putString(ARG_PARAM2, param2)
-                }
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        rvSingers = view.findViewById(R.id.rv_Singer)
+        rvSingers.setHasFixedSize(true)
+
+        list.addAll(getListSingers())
+        showRecyclerList()
+    }
+
+    private fun getListSingers(): ArrayList<Singer> {
+        val dataName = resources.getStringArray(R.array.data_name)
+        val dataDesc = resources.getStringArray(R.array.data_desc)
+        val dataImg = resources.obtainTypedArray(R.array.data_img)
+        val dataInstagram = resources.getStringArray(R.array.data_instagram)
+
+        val listSingers = ArrayList<Singer>()
+        for (i in dataName.indices) {
+            val singer = Singer(
+                dataName[i],
+                dataDesc[i],
+                dataImg.getResourceId(i, -1),
+                dataInstagram[i] // Menggunakan nilai dataInstagram[i] sebagai instagramUsername
+            )
+            listSingers.add(singer)
+        }
+
+        dataImg.recycle() // Pastikan untuk mendaur ulang TypedArray setelah digunakan
+        return listSingers
+    }
+
+    private fun showRecyclerList() {
+        rvSingers.layoutManager = LinearLayoutManager(requireContext())
+        val listSingerAdapter = ListSingerAdapter(list)
+        rvSingers.adapter = listSingerAdapter
+
+        listSingerAdapter.setOnItemClickCallback(object : ListSingerAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Singer) {
+                showSelectedSinger(data)
             }
+
+        })
+    }
+
+    private fun showSelectedSinger(singer: Singer) {
+        Toast.makeText(requireContext(), singer.name + " is selected", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater?.inflate(R.menu.option_menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_list -> {
+                rvSingers.layoutManager = LinearLayoutManager(requireContext())
+            }
+            R.id.action_grid -> {
+                rvSingers.layoutManager = GridLayoutManager(requireContext(), 2)
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }

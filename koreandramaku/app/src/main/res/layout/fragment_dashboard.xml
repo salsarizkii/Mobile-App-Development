@@ -8,18 +8,82 @@
     style="@style/Background_color">
 
     <TextView
-        style="@style/title_fix"
         android:id="@+id/text_dashboard"
+        style="@style/title_fix"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:text="@string/dasb"
         android:textAlignment="center"
         android:textSize="20sp"
-        android:text="@string/dasb"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.04" />
+
+    <TextView
+        style="@style/text_color"
+        android:layout_width="300dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="73dp"
+        tools:layout_editor_absoluteY="238dp"
+        tools:text="@string/singerdesc1" />
+
+    <TextView
+        style="@style/text_color"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="171dp"
+        tools:layout_editor_absoluteY="204dp"
+        tools:text="@string/singer_name1" />
+
+    <TextView
+        style="@style/text_color"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="460dp"
+        tools:text="@string/singer_name3" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints"
+
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="100dp"
+        tools:src="@drawable/nctdream" />
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:scaleType="centerCrop"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="162dp"
+        tools:layout_editor_absoluteY="352dp"
+        tools:src="@drawable/taylor" />
+
+    <TextView
+        style="@style/text_color"
+        android:layout_width="300dp"
+        android:ellipsize="end"
+        android:maxLines="5"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="492dp"
+        tools:text="@string/singerdesc3" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
