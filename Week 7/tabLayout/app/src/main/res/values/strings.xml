@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">MyTabLayout</string>
-    <string name="tab_text_1">Home</string>
-    <string name="tab_text_2">Profile</string>
+    <string name="tab_text_1">singer</string>
+    <string name="tab_text_2">song</string>
     <string name="tab_text_3">Setting</string>
     <string name="content_tab_home">Welcome Home</string>
     <string name="content_tab_profile">Change your Profile here</string>
@@ -35,7 +35,7 @@
             <item><![CDATA[I have idolized him ever since he released his song "Love in My Pocket." He is Indonesian but based in the USA under the 88rising label.
         I knew about him before, but after "Love in My Pocket," I started following him closely. I even learned English because of him!
     ]]></item>
-            <item><![CDATA[Of course, when I started senior high school, two songs by Nadin Amizah became popular, and surprisingly, I loved them even though her music genre usually does not fit my taste!
+            <item><![CDATA[Of coure, when I started senior high school, two songs by Nadin Amizah became popular, and surprisingly, I loved them even though her music genre usually does not fit my taste!
         Until now, I still love her and her song "Star" the most.
     ]]></item>
             <item><![CDATA[I have really loved her since I found a singing video of her covering the song "I Love You, You'll Know It." Her voice is so unique and calming!
