@@ -2,41 +2,101 @@ package com.l0122147.salsarizki.responsi.ui.dashboard
 
 import android.os.Bundle
 import android.view.LayoutInflater
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
+import android.widget.Toast
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
-import androidx.lifecycle.ViewModelProvider
-import com.l0122147.salsarizki.responsi.databinding.FragmentDashboardBinding
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+import com.l0122147.salsarizki.tablayout.R
 
-class DashboardFragment : Fragment() {
+class DashboardFragment: Fragment() {
 
-    private var _binding: FragmentDashboardBinding? = null
 
-    // This property is only valid between onCreateView and
-    // onDestroyView.
-    private val binding get() = _binding!!
+    private lateinit var rvSingers: RecyclerView
+    private val list = ArrayList<Singer>()
 
     override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
+        inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View {
-        val dashboardViewModel =
-            ViewModelProvider(this).get(DashboardViewModel::class.java)
-
-        _binding = FragmentDashboardBinding.inflate(inflater, container, false)
-        val root: View = binding.root
-
-        val textView: TextView = binding.textDashboard
-        dashboardViewModel.text.observe(viewLifecycleOwner) {
-            textView.text = it
+    ): View? {
+        // Inflate the layout for this fragment
+        val view = inflater.inflate(R.layout.fragment_home, container, false)
+        ViewCompat.setOnApplyWindowInsetsListener(view.findViewById(R.id.main)) { v, insets ->
+            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
+            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
+            insets
         }
-        return root
+        return view
     }
 
-    override fun onDestroyView() {
-        super.onDestroyView()
-        _binding = null
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        rvSingers = view.findViewById(R.id.rv_Singer)
+        rvSingers.setHasFixedSize(true)
+
+        list.addAll(getListSingers())
+        showRecyclerList()
+    }
+
+    private fun getListSingers(): ArrayList<Singer> {
+        val dataName = resources.getStringArray(R.array.data_name)
+        val dataDesc = resources.getStringArray(R.array.data_desc)
+        val dataImg = resources.obtainTypedArray(R.array.data_img)
+        val dataInstagram = resources.getStringArray(R.array.data_instagram)
+
+        val listSingers = ArrayList<Singer>()
+        for (i in dataName.indices) {
+            val singer = Singer(
+                dataName[i],
+                dataDesc[i],
+                dataImg.getResourceId(i, -1),
+                dataInstagram[i] // Menggunakan nilai dataInstagram[i] sebagai instagramUsername
+            )
+            listSingers.add(singer)
+        }
+
+        dataImg.recycle() // Pastikan untuk mendaur ulang TypedArray setelah digunakan
+        return listSingers
+    }
+
+    private fun showRecyclerList() {
+        rvSingers.layoutManager = LinearLayoutManager(requireContext())
+        val listSingerAdapter = ListSingerAdapter(list)
+        rvSingers.adapter = listSingerAdapter
+
+        listSingerAdapter.setOnItemClickCallback(object : ListSingerAdapter.OnItemClickCallback {
+            override fun onItemClicked(data: Singer) {
+                showSelectedSinger(data)
+            }
+
+        })
+    }
+
+    private fun showSelectedSinger(singer: Singer) {
+        Toast.makeText(requireContext(), singer.name + " is selected", Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater?.inflate(R.menu.option_menu, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            R.id.action_list -> {
+                rvSingers.layoutManager = LinearLayoutManager(requireContext())
+            }
+            R.id.action_grid -> {
+                rvSingers.layoutManager = GridLayoutManager(requireContext(), 2)
+            }
+        }
+        return super.onOptionsItemSelected(item)
     }
 }
