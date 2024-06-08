@@ -14,11 +14,9 @@ import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.l0122147.salsarizki.tablayout.R
+import com.l0122147.salsarizki.responsi.R
 
 class DashboardFragment: Fragment() {
-
-
     private lateinit var rvSingers: RecyclerView
     private val list = ArrayList<Singer>()
 
@@ -27,7 +25,7 @@ class DashboardFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view = inflater.inflate(R.layout.fragment_home, container, false)
+        val view = inflater.inflate(R.layout.fragment_dashboard, container, false)
         ViewCompat.setOnApplyWindowInsetsListener(view.findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
@@ -83,20 +81,6 @@ class DashboardFragment: Fragment() {
         Toast.makeText(requireContext(), singer.name + " is selected", Toast.LENGTH_SHORT).show()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
-        inflater?.inflate(R.menu.option_menu, menu)
-        super.onCreateOptionsMenu(menu, inflater)
-    }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        when (item.itemId) {
-            R.id.action_list -> {
-                rvSingers.layoutManager = LinearLayoutManager(requireContext())
-            }
-            R.id.action_grid -> {
-                rvSingers.layoutManager = GridLayoutManager(requireContext(), 2)
-            }
-        }
-        return super.onOptionsItemSelected(item)
-    }
+
 }

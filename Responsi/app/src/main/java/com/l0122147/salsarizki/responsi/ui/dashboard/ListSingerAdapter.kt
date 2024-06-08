@@ -3,13 +3,16 @@ package com.l0122147.salsarizki.responsi.ui.dashboard
 import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.l0122147.salsarizki.tablayout.R
+import com.l0122147.salsarizki.responsi.R
+
 
 class ListSingerAdapter(private val listCat: ArrayList<Singer>) :
     RecyclerView.Adapter<ListSingerAdapter.ListViewHolder>() {
@@ -51,11 +54,14 @@ class ListSingerAdapter(private val listCat: ArrayList<Singer>) :
         holder.tvDescription.text = currentCat.description
 
         // Set click listener to open Instagram profile when the item is clicked
-        holder.itemView.setOnClickListener {
+        holder.itemView.setOnClickListener {view ->
             // Call openInstagramProfile with the Instagram username of the current cat
-            currentCat.instagramUsername?.let { username ->
-                openInstagramProfile(username, holder.itemView)
-            }
+            val mBundle = Bundle()
+            mBundle.putInt("image", currentCat.imageResId)
+            mBundle.putString("name", currentCat.name)
+            mBundle.putString("description", currentCat.description)
+            view.findNavController().navigate(R.id.action_navigation_dashboard_to_detailFragment, mBundle)
+
         }
     }
 

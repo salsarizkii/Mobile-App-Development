@@ -5,17 +5,18 @@ plugins {
 }
 
 android {
-    namespace = "com.l0122147.salsarizki.tablayout"
+    namespace = "com.l0122147.salsarizki.responsi"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.l0122147.salsarizki.tablayout"
+        applicationId = "com.l0122147.salsarizki.responsi"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+//        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
@@ -34,6 +35,9 @@ android {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -43,9 +47,13 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    implementation(libs.androidx.navigation.fragment.ktx)
+    implementation(libs.androidx.navigation.ui.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 
     implementation("androidx.viewpager2:viewpager2:1.0.0")
+//    implementation (libs.material.v100)
+//    implementation (libs.appcompat.v7)
 }

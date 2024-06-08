@@ -1,11 +1,11 @@
 <resources>
-    <string name="app_name">MyBottomNavigation</string>
+    <string name="app_name">Harmonify</string>
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
     <string name="title_profile">Profile</string>
 
-    <string name="tittleHome">singer list</string>
+    <string name="tittleHome">Harmonify</string>
     <string name="NameProfile">Salsa Rizki Saputri</string>
     <string name="Nim">L0122147</string>
     <string name="prodiAngkatan">Informatika, 2022</string>
@@ -39,8 +39,7 @@
 
     <string name="greetingstring">Hello, EveryOne! I\'m Salsa!</string>
     <string name="About_Me">Get To Know Me!</string>
-    <string name="Desc">Hi everyone, let me introduce myself, my name is Salsa! I\'m 19 years old and currently studying computer science. Welcome to my first
-    Mobile-App-Development Journey!</string>
+    <string name="Desc">Harmonify adalah aplikasi yang menyediakan platform untuk mengeksplorasi dan mendeskripsikan penyanyi favorit Anda. Dengan antarmuka yang ramah pengguna, Anda dapat menemukan informasi mendalam tentang artis, termasuk biografi, genre musik, album terbaru, dan banyak lagi. Harmonify juga memungkinkan pengguna untuk membuat profil pribadi, menyimpan daftar penyanyi favorit, dan berbagi rekomendasi dengan teman-teman mereka. Dengan fokus pada memperluas pengetahuan musik pengguna, Harmonify menjadi teman setia bagi para pecinta musik yang ingin mengeksplorasi lebih jauh tentang artis favorit mereka.</string>
     <string name="button">Detail Information</string>
     <string name="find_me">find me!</string>
     <string name="mypict_desc">first pic</string>
@@ -126,7 +125,4 @@
         <item>tulusm</item>
         <item>fiersabesari</item>
     </string-array>
-
-    <string name="list">List</string>
-    <string name="grid">Grid</string>
 </resources>

@@ -6,41 +6,41 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/Background_color"
-    tools:context=".MainActivity">
+    tools:context=".ui.home.HomeFragment">
 
     <TextView
-        style="@style/title_fix"
         android:id="@+id/greeting"
+        style="@style/title_fix"
         android:layout_width="248dp"
         android:layout_height="40dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="28dp"
         android:text="@string/greetingstring"
         app:layout_constraintEnd_toStartOf="@+id/guideline3"
-        app:layout_constraintHorizontal_bias="0.732"
+        app:layout_constraintHorizontal_bias="0.464"
         app:layout_constraintStart_toStartOf="@+id/guideline4"
         app:layout_constraintTop_toTopOf="@+id/guideline2" />
 
     <TextView
-        style="@style/title_fix"
         android:id="@+id/titleHome"
+        style="@style/title_fix"
         android:layout_width="159dp"
         android:layout_height="26dp"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginTop="22dp"
         android:backgroundTintMode="screen"
-        android:contentDescription="@string/About_Me"
         android:fadeScrollbars="true"
-        android:text="@string/tittleHome"
+        android:text="@string/app_name"
         android:textAppearance="@style/TextAppearance.AppCompat.Body2"
         app:layout_constraintBottom_toTopOf="@+id/desc"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.559"
+        app:layout_constraintHorizontal_bias="0.583"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.959" />
+        app:layout_constraintTop_toBottomOf="@+id/mypict"
+        app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
         android:id="@+id/mypict"
@@ -49,11 +49,12 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.562"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/greeting"
-        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintBottom_toTopOf="@id/titleHome"
         app:srcCompat="@drawable/depan1" />
 
     <TextView
@@ -64,16 +65,18 @@
         android:layout_alignWithParentIfMissing="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
+        android:layout_marginBottom="52dp"
         android:focusableInTouchMode="true"
         android:importantForAccessibility="noHideDescendants"
         android:keepScreenOn="true"
         android:lineSpacingExtra="12dp"
         android:text="@string/Desc"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.571"
+        app:layout_constraintHorizontal_bias="0.593"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleHome"
         app:lineHeight="25dp"
-        tools:layout_editor_absoluteY="395dp"
         tools:ignore="MissingConstraints" />
 
     <androidx.constraintlayout.widget.Guideline
