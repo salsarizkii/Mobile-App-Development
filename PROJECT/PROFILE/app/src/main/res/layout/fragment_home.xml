@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+
+    card_view:cardCornerRadius="20dp"
+    card_view:cardElevation="50dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Background_color"
+    tools:context=".ui.home.HomeFragment">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="434dp"
+        android:layout_height="219dp"
+        tools:layout_editor_absoluteX="-10dp"
+        tools:layout_editor_absoluteY="-22dp"
+        tools:src="@drawable/profile-back.jpg" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="140dp"
+        android:layout_height="142dp"
+        android:layout_marginStart="132dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintVertical_bias="0.205"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:shapeAppearanceOverlay="@style/shapeImageView"
+        tools:src="@tools:sample/avatars" />
+
+    <Button
+        android:id="@+id/buttonEdit"
+        style="@style/button_color"
+        android:layout_width="478dp"
+        android:layout_height="59dp"
+        android:backgroundTintMode="add"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-34dp"
+        tools:layout_editor_absoluteY="319dp" />
+
+    <Button
+        android:id="@+id/buttonStarredMessage"
+        style="@style/button_color"
+        android:layout_width="478dp"
+        android:layout_height="59dp"
+        android:backgroundTintMode="add"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-34dp"
+        tools:layout_editor_absoluteY="399dp" />
+
+    <Button
+        android:id="@+id/buttonArchive"
+        style="@style/button_color"
+        android:layout_width="478dp"
+        android:layout_height="59dp"
+        android:backgroundTintMode="add"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-34dp"
+        tools:layout_editor_absoluteY="469dp" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
