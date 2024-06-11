@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/news_card"
+    android:layout_width="match_parent"
+    android:layout_height="240dp"
+    android:layout_gravity="center"
+    app:cardCornerRadius="16dp"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="16dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:backgroundTint="@color/dark_565656">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp">
+
+        <ImageView
+            android:id="@+id/rv_item_berita_img"
+            android:layout_width="380dp"
+            android:layout_height="52dp"
+            android:background="@color/superdark_green"
+            android:contentDescription="@string/app_name"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:src="@drawable/cream_halfrounded" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_item_photo"
+            android:layout_width="37dp"
+            android:layout_height="36dp"
+            android:scaleType="centerCrop"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="317dp"
+            tools:layout_editor_absoluteY="7dp"
+            tools:src="@drawable/background_putih_persegi" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_item_photo2"
+            android:layout_width="37dp"
+            android:layout_height="36dp"
+            android:scaleType="centerCrop"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="263dp"
+            tools:layout_editor_absoluteY="7dp"
+            tools:src="@drawable/background_putih_persegi" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/img_item_photo1"
+            android:layout_width="37dp"
+            android:layout_height="36dp"
+            android:scaleType="centerCrop"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="209dp"
+            tools:layout_editor_absoluteY="7dp"
+            tools:src="@drawable/background_putih_persegi" />
+
+        <TextView
+            android:id="@+id/tv_item_name"
+            style="@style/title_fix"
+            android:layout_width="164dp"
+            android:layout_height="27dp"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/title_notes"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/tv_item_description"
+            android:layout_width="348dp"
+            android:layout_height="157dp"
+            android:layout_marginHorizontal="16dp"
+            android:text="@string/notes"
+            android:textSize="15sp"
+            android:textStyle="normal"
+            android:textColor="@color/cream"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="65dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

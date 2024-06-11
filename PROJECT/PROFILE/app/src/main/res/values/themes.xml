@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.MyApplication" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
@@ -20,13 +20,36 @@
     </style>
 
     <style name="Background_color">
-        <item name="android:background">@color/cream_calm</item>
-        <item name="android:foregroundTint">@color/cream_calm</item>
+        <item name="android:background">@color/cream</item>
+        <item name="android:foregroundTint">@color/cream</item>
         <item name="android:foregroundTintMode">add</item>
     </style>
 
     <style name="shapeImageView">
-        <item name="cornerSize">20%</item>
+        <item name="cornerSize">50%</item>
         <item name="android:elevation">16dp</item>
+    </style>
+
+    <style name="title_fix">
+        <item name="android:textColor">@color/dark_565656</item>
+        <item name="android:textSize">20.sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="fontFamily">"sans-serif-medium"</item>
+    </style>
+
+    <style name="username">
+        <item name="android:textColor">@color/dark_777777</item>
+        <item name="android:textSize">20.sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:opacity">translucent</item>
+        <item name="fontFamily">"sans-serif-medium"</item>
+    </style>
+
+    <style name="description">
+        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:foregroundTintMode">add</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/dark_777777</item>
+        <item name="android:textStyle">italic</item>
     </style>
 </resources>

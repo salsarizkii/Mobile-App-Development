@@ -3,4 +3,38 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
+    <string name="name_info">Salsa Rizki Saputri</string>
+    <string name="email">salsarizkisaputri@student.uns.ac.id</string>
+    <string name="noHp">085743863245</string>
+    <string name="title_notes">Finance</string>
+    <string name="username">\@salsars</string>
+
+    <!--    ProfileFragment-->
+    <string name="title_edit_profile">Edit Profile</string>
+    <string name="desc_edit_profile">Edit your email, username, etc. Here!</string>
+    <string name="title_starred">Starred Notes</string>
+    <string name="desc_starred">Find your favorite Notes, here!</string>
+    <string name="title_bookmark">Archived Notes</string>
+    <string name="desc_bookmark">Wanna look for your Archived Notes? Here!</string>
+
+    <!--    recycle view-->
+    <string name="notes">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+
+    <string-array name="data_desc">
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </item>
+        <item>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </item>
+    </string-array>
+
+    <string-array name="data_name">
+        <item>Finance</item>
+        <item>To Do List</item>
+        <item>Movie</item>
+        <item>Memo</item>
+        <item>Notes</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

@@ -7,9 +7,16 @@
 
     <fragment
         android:id="@+id/navigation_home"
-        android:name="com.l0122147.salsarizki.myapplication.ui.home.HomeFragment"
+        android:name="com.l0122147.salsarizki.myapplication.ui.home.StarredFragment"
         android:label="@string/title_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_starredFragment"
+            app:destination="@id/starredFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_bookmarkFragment"
+            app:destination="@id/bookmarkFragment" />
+    </fragment>
 
     <fragment
         android:id="@+id/navigation_dashboard"
@@ -22,4 +29,14 @@
         android:name="com.l0122147.salsarizki.myapplication.ui.notifications.NotificationsFragment"
         android:label="@string/title_notifications"
         tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/starredFragment"
+        android:name="com.l0122147.salsarizki.myapplication.ui.home.StarredFragment"
+        android:label="fragment_starred"
+        tools:layout="@layout/fragment_starred" />
+    <fragment
+        android:id="@+id/bookmarkFragment"
+        android:name="com.l0122147.salsarizki.myapplication.ui.home.BookmarkFragment"
+        android:label="fragment_bookmark"
+        tools:layout="@layout/fragment_bookmark" />
 </navigation>

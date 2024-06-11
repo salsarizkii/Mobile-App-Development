@@ -13,55 +13,242 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="434dp"
-        android:layout_height="219dp"
-        tools:layout_editor_absoluteX="-10dp"
-        tools:layout_editor_absoluteY="-22dp"
-        tools:src="@drawable/profile-back.jpg" />
+        android:layout_width="638dp"
+        android:layout_height="208dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-120dp"
+        tools:layout_editor_absoluteY="-56dp"
+        tools:src="@drawable/profile_back" />
+
 
     <com.google.android.material.imageview.ShapeableImageView
-        android:id="@+id/img_item_photo"
+        android:id="@+id/img_item_photo1"
         android:layout_width="140dp"
         android:layout_height="142dp"
         android:layout_marginStart="132dp"
         android:scaleType="centerCrop"
-        app:layout_constraintVertical_bias="0.205"
+        app:layout_constraintVertical_bias="0.101"
         card_view:layout_constraintBottom_toBottomOf="parent"
         card_view:layout_constraintStart_toStartOf="parent"
         card_view:layout_constraintTop_toTopOf="parent"
         card_view:shapeAppearanceOverlay="@style/shapeImageView"
         tools:src="@tools:sample/avatars" />
 
-    <Button
-        android:id="@+id/buttonEdit"
-        style="@style/button_color"
-        android:layout_width="478dp"
-        android:layout_height="59dp"
-        android:backgroundTintMode="add"
+    <TextView
+        android:id="@+id/username"
+        style="@style/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/username"
+        android:opacity="transparent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-34dp"
-        tools:layout_editor_absoluteY="319dp" />
+        tools:layout_editor_absoluteX="158dp"
+        tools:layout_editor_absoluteY="235dp" />
 
-    <Button
-        android:id="@+id/buttonStarredMessage"
-        style="@style/button_color"
-        android:layout_width="478dp"
-        android:layout_height="59dp"
-        android:backgroundTintMode="add"
+    <TextView
+        android:id="@+id/nama_terang"
+        style="@style/title_fix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/name_info"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-34dp"
-        tools:layout_editor_absoluteY="399dp" />
+        tools:layout_editor_absoluteX="120dp"
+        tools:layout_editor_absoluteY="210dp" />
 
-    <Button
-        android:id="@+id/buttonArchive"
-        style="@style/button_color"
-        android:layout_width="478dp"
-        android:layout_height="59dp"
-        android:backgroundTintMode="add"
+
+    <TextView
+        android:id="@+id/title_edit_profile"
+        style="@style/title_fix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/title_edit_profile"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="-34dp"
-        tools:layout_editor_absoluteY="469dp" />
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="568dp" />
 
+    <TextView
+        android:id="@+id/desc_edit_profile"
+        style="@style/description"
+        android:layout_width="328dp"
+        android:layout_height="17dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="left"
+        android:text="@string/desc_edit_profile"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="595dp" />
+
+    <TextView
+        android:id="@+id/desc_starred"
+        style="@style/description"
+        android:layout_width="328dp"
+        android:layout_height="17dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="left"
+        android:text="@string/desc_starred"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="647dp" />
+
+    <TextView
+        android:id="@+id/title_bookmark"
+        style="@style/title_fix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/title_starred"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="620dp" />
+
+    <TextView
+        android:id="@+id/desc_bookmark"
+        style="@style/description"
+        android:layout_width="328dp"
+        android:layout_height="17dp"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="left"
+        android:text="@string/desc_bookmark"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="698dp" />
+
+    <TextView
+        android:id="@+id/title_starred"
+        style="@style/title_fix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/title_bookmark"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="31dp"
+        tools:layout_editor_absoluteY="671dp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        style="@style/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noHp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="272dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        style="@style/description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="40dp"
+        tools:layout_editor_absoluteY="262dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="600dp"
+        android:layout_height="62dp"
+        android:src="@drawable/button_profile"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-82dp"
+        tools:layout_editor_absoluteY="334dp" />
+
+    <ImageButton
+        android:id="@+id/btnStarred"
+        android:layout_width="600dp"
+        android:layout_height="62dp"
+        android:src="@drawable/button_profile"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-82dp"
+        tools:layout_editor_absoluteY="412dp" />
+
+    <ImageButton
+        android:id="@+id/btnBookmark"
+        android:layout_width="600dp"
+        android:layout_height="62dp"
+        android:src="@drawable/button_profile"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-82dp"
+        tools:layout_editor_absoluteY="489dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_item_photo4"
+        android:layout_width="44dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintVertical_bias="0.499"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:shapeAppearanceOverlay="@style/shapeImageView"
+        tools:src="@drawable/background_putih_persegi" />
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_item_photo5"
+        android:layout_width="43dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintVertical_bias="0.724"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:shapeAppearanceOverlay="@style/shapeImageView"
+        tools:src="@drawable/background_putih_persegi" />
+
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="28dp"
+        android:src="@drawable/user_edit"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_item_photo"
+        android:layout_width="42dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintVertical_bias="0.613"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        card_view:shapeAppearanceOverlay="@style/shapeImageView"
+        tools:src="@drawable/background_putih_persegi" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/star"
+        app:layout_constraintVertical_bias="0.611"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="24dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="24dp"
+        android:src="@drawable/bookmark"
+        app:layout_constraintVertical_bias="0.717"
+        card_view:layout_constraintBottom_toBottomOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
